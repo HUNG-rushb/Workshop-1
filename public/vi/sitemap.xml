@@ -2,114 +2,114 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>//localhost:58324/vi/</loc>
+    <loc>//localhost:1313/vi/</loc>
     <lastmod>1970-01-01T07:33:41+07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="//localhost:58324/"
+                href="//localhost:1313/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="//localhost:58324/vi/"
+                href="//localhost:1313/vi/"
                 />
   </url><url>
-    <loc>//localhost:58324/vi/1-introduce/</loc>
+    <loc>//localhost:1313/vi/1-introduce/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="//localhost:58324/1-introduce/"
+                href="//localhost:1313/1-introduce/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="//localhost:58324/vi/1-introduce/"
+                href="//localhost:1313/vi/1-introduce/"
                 />
   </url><url>
-    <loc>//localhost:58324/vi/2-prerequiste/</loc>
+    <loc>//localhost:1313/vi/2-prerequiste/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="//localhost:58324/2-prerequiste/"
+                href="//localhost:1313/2-prerequiste/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="//localhost:58324/vi/2-prerequiste/"
+                href="//localhost:1313/vi/2-prerequiste/"
                 />
   </url><url>
-    <loc>//localhost:58324/vi/3-s3sal/</loc>
+    <loc>//localhost:1313/vi/3-s3sal/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="//localhost:58324/3-s3sal/"
+                href="//localhost:1313/3-s3sal/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="//localhost:58324/vi/3-s3sal/"
+                href="//localhost:1313/vi/3-s3sal/"
                 />
   </url><url>
-    <loc>//localhost:58324/vi/4-s3cloudtrail/</loc>
+    <loc>//localhost:1313/vi/4-s3cloudtrail/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="//localhost:58324/4-s3cloudtrail/"
+                href="//localhost:1313/4-s3cloudtrail/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="//localhost:58324/vi/4-s3cloudtrail/"
+                href="//localhost:1313/vi/4-s3cloudtrail/"
                 />
   </url><url>
-    <loc>//localhost:58324/vi/5-s3athena/</loc>
+    <loc>//localhost:1313/vi/5-s3athena/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="//localhost:58324/5-s3athena/"
+                href="//localhost:1313/5-s3athena/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="//localhost:58324/vi/5-s3athena/"
+                href="//localhost:1313/vi/5-s3athena/"
                 />
   </url><url>
-    <loc>//localhost:58324/vi/6-cleanup/</loc>
+    <loc>//localhost:1313/vi/6-cleanup/</loc>
     <lastmod>1970-01-01T07:33:41+07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="//localhost:58324/6-cleanup/"
+                href="//localhost:1313/6-cleanup/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="//localhost:58324/vi/6-cleanup/"
+                href="//localhost:1313/vi/6-cleanup/"
                 />
   </url><url>
-    <loc>//localhost:58324/vi/categories/</loc>
+    <loc>//localhost:1313/vi/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="//localhost:58324/categories/"
+                href="//localhost:1313/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="//localhost:58324/vi/categories/"
+                href="//localhost:1313/vi/categories/"
                 />
   </url><url>
-    <loc>//localhost:58324/vi/tags/</loc>
+    <loc>//localhost:1313/vi/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="//localhost:58324/tags/"
+                href="//localhost:1313/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="//localhost:58324/vi/tags/"
+                href="//localhost:1313/vi/tags/"
                 />
   </url>
 </urlset>

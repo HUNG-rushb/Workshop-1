@@ -1,62 +1,62 @@
 [
 {
-	"uri": "//localhost:58324/",
+	"uri": "//localhost:1313/",
 	"title": "AWS S3 Logging",
 	"tags": [],
 	"description": "",
 	"content": "AWS S3 Logging Workshop Overall In this lab, you\u0026rsquo;ll learn the basics and practice of Amazon System Manager - Session Manager . Perform creating public and private instance connections.\nContent Introduction Preparation S3 Server Access Logging Apply AWS CloudTrail Port Forwarding Clean up "
 },
 {
-	"uri": "//localhost:58324/1-introduce/",
+	"uri": "//localhost:1313/1-introduce/",
 	"title": "Introduction",
 	"tags": [],
 	"description": "",
 	"content": "When you use logging with Amazon S3, you can record actions taken by users, and services on your Amazon S3 resources. You can then use the log records for auditing and compliance purposes.\nYou can log Amazon S3 actions using server access logs or AWS CloudTrail logs.\nServer access logging is a mechanism that provides detailed records for requests made to an S3 bucket.\nServer access logging is disabled by default. Enable server access logging to start receiving logs. Log records are generally delivered within a few hours and it is rare to lose log records. There is no charge for enabling access logging, nor for PUT operations for log files. You are only charged for storage of the logs and for GET operations on the files. You can use object lifecycle management to minimize storage costs.\nAWS CloudTrail is a service that provides records of actions taken by a user, role, or service in your AWS Account. You can use CloudTrail to audit your account by logging and monitoring all activity. You can also use CloudTrail to detect unusual activity in your account.\nLogging Amazon S3 actions with AWS CloudTrail helps keep your account secure by providing access auditing and analysis.\nComparison\nLog properties AWS CloudTrail Amazon S3 server logs Can be forwarded to other systems (Amazon CloudWatch Logs, Amazon CloudWatch Events) Yes No Deliver logs to more than one destination (for example, send the same logs to two different buckets) Yes No Turn on logs for a subset of objects (prefix) Yes No Cross-account log delivery (target and source bucket owned by different accounts) Yes No Integrity validation of log file by using digital signature or hashing Yes No Default or choice of encryption for log files Yes No Object operations (by using Amazon S3 APIs) Yes Yes Bucket operations (by using Amazon S3 APIs) Yes Yes Searchable UI for logs Yes No Fields for Object Lock parameters, Amazon S3 Select properties for log records Yes No Amazon Athena is an interactive query service that makes it easy for you to analyze data in Amazon S3 using standard SQL. You do not need to manage any infrastructure with Athena, and you pay only for the queries that you run.\nOnce you enable server access logs and store them in your target S3 bucket, you might want to analyze or search through them. Logs are not automatically analyzed by Amazon S3, and you might have a lot of data. To analyze all your Amazon S3 data, you can use Amazon Athena.\n"
 },
 {
-	"uri": "//localhost:58324/2-prerequiste/",
+	"uri": "//localhost:1313/2-prerequiste/",
 	"title": "Preparation ",
 	"tags": [],
 	"description": "",
 	"content": "To prepare for this workshop, we create a public access bucket to store the files we need to access and a private bucket to store the server access log.\nTruy cập vào AWS Management Console, tìm S3 và chọn S3. Trong giao diện S3, chọn Create bucket. Trong giao diện create bucket Mục AWS Region, chọn Asia Pacific (Singapore) ap-southeast-1. Mục Bucket name, nhập logging-workshop. Tiếp tục: Mục Block Public Access settings for this bucket, bỏ chọn Block all public access. Mục Turning off block all public access might result in this bucket and the objects within becoming public, xác nhận mục này. Kéo xuống dưới cùng, chọn Create bucket. Xác nhận bucket đã được tạo thành công và chọn vào bucket. Trong giao diện bucket, chọn Upload. Trong giao diện upload, chọn Add files. Tải xuống file S3_logging_workshop.txt tại https://logging-workshop.s3.ap-southeast-1.amazonaws.com/S3_logging_workshop.txt Bạn hãy mở file trong tab mở, nhấn Ctrl S để lưu file về máy.\nXác nhận file đã chọn thành công. Chọn Upload. Xác nhận file đã được tải lên thành công. Trở về giao diện S3, chọn logging-workshop bucket. Trong giao diện bucket, chọn mục Permissions. Mục Bucket policy, chọn Edit. Nhập vào mục policy: { \u0026#34;Version\u0026#34;: \u0026#34;2012-10-17\u0026#34;, \u0026#34;Statement\u0026#34;: [ { \u0026#34;Effect\u0026#34;: \u0026#34;Allow\u0026#34;, \u0026#34;Principal\u0026#34;: \u0026#34;*\u0026#34;, \u0026#34;Action\u0026#34;: \u0026#34;s3:GetObject\u0026#34;, \u0026#34;Resource\u0026#34;: \u0026#34;arn:aws:s3:::logging-workshop/*\u0026#34; } ] } Kéo xuống dưới cùng, chọn Save changes Xác nhận update policy thành công. Trở về giao diện bucket, chọn vào file S3_logging_workshop.txt. Copy Object URL. Paste URL vào trình duyệt vào xác nhận đã truy cập được vào file. "
 },
 {
-	"uri": "//localhost:58324/3-s3sal/",
+	"uri": "//localhost:1313/3-s3sal/",
 	"title": "Connect to EC2 servers",
 	"tags": [],
 	"description": "",
 	"content": "In this step, we will enable Server access logging.\nServer access logs give you visibility into detailed object-level operations on your data. The log files are text files that have one line for each log record. Each log record represents one request and consists of space-delimited fields.\nThe fields relate to operation, requester, resource, and session information. Here is an example:\n79a59df900b949e55d96a1e698fbacedfd6e09d98eacf8f8d5218e7cd47ef2be awsexamplebucket1 [06/Feb/2019:00:00:38 +0000] 192.0.2.3 79a59df900b949e55d96a1e698fbacedfd6e09d98eacf8f8d5218e7cd47ef2be 3E57427F3EXAMPLE REST.GET.VERSIONING - \u0026#34;GET /awsexamplebucket1?versioning HTTP/1.1\u0026#34; 200 - 113 - 7 - \u0026#34;-\u0026#34; \u0026#34;S3Console/0.4\u0026#34; - s9lzHYrFp76ZVxRcpX9+5cjAnEH2ROuNkd2BHfIa6UkFVdtjf5mKR3/eTPFvsiP/XV/VLi31234= SigV2 ECDHE-RSA-AES128-GCM-SHA256 AuthHeader awsexamplebucket1.s3.us-west-1.amazonaws.com TLSV1.1 "
 },
 {
-	"uri": "//localhost:58324/4-s3cloudtrail/",
+	"uri": "//localhost:1313/4-s3cloudtrail/",
 	"title": "Manage session logs",
 	"tags": [],
 	"description": "",
 	"content": "With Session Manager, we can view the history of connections to instances through Session history. However, we have not seen the details of the commands used in a session.\nIn this section, we will proceed to create an S3 bucket and configure the session logs feature to see the details of the commands used in the session.\n"
 },
 {
-	"uri": "//localhost:58324/5-s3athena/",
+	"uri": "//localhost:1313/5-s3athena/",
 	"title": "Port Forwarding",
 	"tags": [],
 	"description": "",
 	"content": "\rPort Forwarding is a useful way to redirect network traffic from one IP address - Port to another IP address - Port. With Port Forwarding we can access an EC2 instance located in the private subnet from our workstation.\nWe will configure Port Forwarding for the RDP connection between our machine and Private Windows Instance located in the private subnet we created for this exercise.\nCreate IAM user with permission to connect SSM Go to IAM service management console Click Users , then click Add users. At the Add user page. In the User name field, enter Portfwd. Click on Access key - Programmatic access. Click Next: Permissions. Click Attach existing policies directly.\nIn the search box, enter ssm. Click on AmazonSSMFullAccess. Click Next: Tags, click Next: Reviews. Click Create user. Save Access key ID and Secret access key information to perform AWS CLI configuration.\nInstall and Configure AWS CLI and Session Manager Plugin To perform this hands-on, make sure your workstation has AWS CLI and Session Manager Plugin installed -manager-working-with-install-plugin.html)\nMore hands-on tutorials on installing and configuring the AWS CLI can be found here.\nWith Windows, when extracting the Session Manager Plugin installation folder, run the install.bat file with Administrator permission to perform the installation.\nImplement Portforwarding Run the command below in Command Prompt on your machine to configure Port Forwarding. aws ssm start-session --target (your ID windows instance) --document-name AWS-StartPortForwardingSession --parameters portNumber=\u0026#34;3389\u0026#34;,localPortNumber=\u0026#34;9999\u0026#34; --region (your region) Windows Private Instance Instance ID information can be found when you view the EC2 Windows Private Instance server details.\nExample command: C:\\Windows\\system32\u0026gt;aws ssm start-session --target i-06343d7377486760c --document-name AWS-StartPortForwardingSession --parameters portNumber=\u0026#34;3389\u0026#34;,localPortNumber=\u0026#34;9999\u0026#34; --region ap-southeast-1 If your command gives an error like below: SessionManagerPlugin is not found. Please refer to SessionManager Documentation here: http://docs.aws.amazon.com/console/systems-manager/session-manager-plugin-not-found\nProve that you have not successfully installed the Session Manager Plugin. You may need to relaunch Command Prompt after installing Session Manager Plugin.\nConnect to the Private Windows Instance you created using the Remote Desktop tool on your workstation. In the Computer section: enter localhost:9999. Return to the administration interface of the System Manager - Session Manager service. Click tab Session history. We will see session logs with Document name AWS-StartPortForwardingSession. Congratulations on completing the lab on how to use Session Manager to connect and store session logs in S3 bucket. Remember to perform resource cleanup to avoid unintended costs.\n"
 },
 {
-	"uri": "//localhost:58324/6-cleanup/",
+	"uri": "//localhost:1313/6-cleanup/",
 	"title": "Clean up resources",
 	"tags": [],
 	"description": "",
 	"content": "We will take the following steps to delete the resources we created in this exercise.\nDelete EC2 instance Go to EC2 service management console\nClick Instances. Select both Public Linux Instance and Private Windows Instance instances. Click Instance state. Click Terminate instance, then click Terminate to confirm. Go to IAM service management console\nClick Roles. In the search box, enter SSM. Click to select SSM-Role. Click Delete, then enter the role name SSM-Role and click Delete to delete the role. Click Users. Click on user Portfwd. Click Delete, then enter the user name Portfwd and click Delete to delete the user. Delete S3 bucket Access System Manager - Session Manager service management console.\nClick the Preferences tab. Click Edit. Scroll down. In the section S3 logging. Uncheck Enable to disable logging. Scroll down. Click Save. Go to S3 service management console\nClick on the S3 bucket we created for this lab. (Example: lab-fcj-bucket-0001 ) Click Empty. Enter permanently delete, then click Empty to proceed to delete the object in the bucket. Click Exit. After deleting all objects in the bucket, click Delete\nEnter the name of the S3 bucket, then click Delete bucket to proceed with deleting the S3 bucket. Delete VPC Endpoints Go to VPC service management console Click Endpoints. Select the 4 endpoints we created for the lab including SSM, SSMMESSAGES, EC2MESSAGES, S3GW. Click Actions. Click Delete VPC endpoints. In the confirm box, enter delete.\nClick Delete to proceed with deleting endpoints. Click the refresh icon, check that all endpoints have been deleted before proceeding to the next step.\nDelete VPC Go to VPC service management console\nClick Your VPCs. Click on Lab VPC. Click Actions. Click Delete VPC. In the confirm box, enter delete to confirm, click Delete to delete Lab VPC and related resources.\n"
 },
 {
-	"uri": "//localhost:58324/categories/",
+	"uri": "//localhost:1313/categories/",
 	"title": "Categories",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "//localhost:58324/tags/",
+	"uri": "//localhost:1313/tags/",
 	"title": "Tags",
 	"tags": [],
 	"description": "",

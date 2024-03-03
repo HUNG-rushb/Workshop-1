@@ -5,13 +5,15 @@ theme = "hugo-theme-learn"
 [outputs]
 home = [ "HTML", "RSS", "JSON"]
 
+baseURL = 'https://hung-rushb.github.io/'
+
 [params]
   # Change default color scheme with a variant one. Can be "red", "blue", "green".
   themeVariant = "workshop"
   # Git hub repo link
   editURL = ""
   description = ""
-  author = "journeyoftheaverageguy@gmail.com"
+  author = "hung"
   showVisitedLinks = true
   disableBreadcrumb = false
   disableNextPrev = false
