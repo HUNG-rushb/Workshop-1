@@ -19,5 +19,5 @@ Trong workshop này, chúng ta sẽ cùng nhau thực hành sử dụng tính n�
 2.  [Các bước chuẩn bị](2-Prerequiste/)
 3.  [S3 Server Access Logging](3-s3sal/)
 4.  [Sử dụng AWS CloudTrail](4-s3cloudtrail/)
-5.  [Port Forwarding](5-s3athena/)
+5.  [Truy vấn log với AWS Athena](5-s3athena/)
 6.  [Dọn dẹp tài nguyên](6-cleanup/)
