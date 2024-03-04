@@ -5,7 +5,7 @@ theme = "hugo-theme-learn"
 [outputs]
 home = [ "HTML", "RSS", "JSON"]
 
-baseURL = "https://hung-rushb.github.io/"
+baseURL = "https://hung-rushb.github.io//Workshop-1/"
 
 [params]
   # Change default color scheme with a variant one. Can be "red", "blue", "green".
