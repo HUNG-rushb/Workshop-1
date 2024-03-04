@@ -9,9 +9,7 @@ chapter: false
 
 ### Tổng quan
 
-Trong workshop này, chúng ta sẽ cùng nhau thực hành sử dụng tính năng AWS S3 server access logging và AWS CloudTrail để logging khi S3 bucket của chúng ta được truy cập. Từ đó chúng ta sử dụng AWS SNS để thông báo khi có truy cập.
-
-![ConnectPrivate](/images/arc-log.png)
+Trong workshop này, chúng ta sẽ cùng nhau thực hành sử dụng tính năng **AWS S3 server access logging** và **AWS CloudTrail** để logging khi S3 bucket của chúng ta được truy cập. Từ đó chúng ta sử dụng **AWS Athena** để truy vấn log.
 
 ### Nội dung
 

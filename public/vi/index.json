@@ -4,7 +4,7 @@
 	"title": "AWS S3 Logging",
 	"tags": [],
 	"description": "",
-	"content": "AWS S3 Logging Workshop Tổng quan Trong workshop này, chúng ta sẽ cùng nhau thực hành sử dụng tính năng AWS S3 server access logging và AWS CloudTrail để logging khi S3 bucket của chúng ta được truy cập. Từ đó chúng ta sử dụng AWS SNS để thông báo khi có truy cập.\nNội dung Giới thiệu Các bước chuẩn bị S3 Server Access Logging Sử dụng AWS CloudTrail Truy vấn log với AWS Athena Dọn dẹp tài nguyên "
+	"content": "AWS S3 Logging Workshop Tổng quan Trong workshop này, chúng ta sẽ cùng nhau thực hành sử dụng tính năng AWS S3 server access logging và AWS CloudTrail để logging khi S3 bucket của chúng ta được truy cập. Từ đó chúng ta sử dụng AWS Athena để truy vấn log.\nNội dung Giới thiệu Các bước chuẩn bị S3 Server Access Logging Sử dụng AWS CloudTrail Truy vấn log với AWS Athena Dọn dẹp tài nguyên "
 },
 {
 	"uri": "/vi/1-introduce/",
