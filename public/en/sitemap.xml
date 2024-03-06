@@ -14,30 +14,6 @@
                 href="//localhost:1313/"
                 />
   </url><url>
-    <loc>//localhost:1313/1-introduce/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="//localhost:1313/vi/1-introduce/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="//localhost:1313/1-introduce/"
-                />
-  </url><url>
-    <loc>//localhost:1313/2-prerequiste/2.5-file/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="//localhost:1313/vi/2-prerequiste/2.5-file/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="//localhost:1313/2-prerequiste/2.5-file/"
-                />
-  </url><url>
     <loc>//localhost:1313/2-prerequiste/2.1-2buckets/</loc>
     <xhtml:link
                 rel="alternate"
@@ -50,16 +26,40 @@
                 href="//localhost:1313/2-prerequiste/2.1-2buckets/"
                 />
   </url><url>
-    <loc>//localhost:1313/2-prerequiste/2.4-policy/</loc>
+    <loc>//localhost:1313/3-s3sal/3.1-sal/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="//localhost:1313/vi/2-prerequiste/2.4-policy/"
+                href="//localhost:1313/vi/3-s3sal/3.1-sal/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="//localhost:1313/2-prerequiste/2.4-policy/"
+                href="//localhost:1313/3-s3sal/3.1-sal/"
+                />
+  </url><url>
+    <loc>//localhost:1313/1-introduce/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="//localhost:1313/vi/1-introduce/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="//localhost:1313/1-introduce/"
+                />
+  </url><url>
+    <loc>//localhost:1313/3-s3sal/3.2-log/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="//localhost:1313/vi/3-s3sal/3.2-log/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="//localhost:1313/3-s3sal/3.2-log/"
                 />
   </url><url>
     <loc>//localhost:1313/2-prerequiste/</loc>
@@ -86,30 +86,6 @@
                 href="//localhost:1313/2-prerequiste/2.2-permission/"
                 />
   </url><url>
-    <loc>//localhost:1313/2-prerequiste/2.3-upload/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="//localhost:1313/vi/2-prerequiste/2.3-upload/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="//localhost:1313/2-prerequiste/2.3-upload/"
-                />
-  </url><url>
-    <loc>//localhost:1313/3-s3sal/3.2-log/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="//localhost:1313/vi/3-s3sal/3.2-log/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="//localhost:1313/3-s3sal/3.2-log/"
-                />
-  </url><url>
     <loc>//localhost:1313/3-s3sal/</loc>
     <xhtml:link
                 rel="alternate"
@@ -122,16 +98,28 @@
                 href="//localhost:1313/3-s3sal/"
                 />
   </url><url>
-    <loc>//localhost:1313/3-s3sal/3.1-sal/</loc>
+    <loc>//localhost:1313/2-prerequiste/2.3-upload/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="//localhost:1313/vi/3-s3sal/3.1-sal/"
+                href="//localhost:1313/vi/2-prerequiste/2.3-upload/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="//localhost:1313/3-s3sal/3.1-sal/"
+                href="//localhost:1313/2-prerequiste/2.3-upload/"
+                />
+  </url><url>
+    <loc>//localhost:1313/2-prerequiste/2.4-policy/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="//localhost:1313/vi/2-prerequiste/2.4-policy/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="//localhost:1313/2-prerequiste/2.4-policy/"
                 />
   </url><url>
     <loc>//localhost:1313/4-s3cloudtrail/</loc>
@@ -144,6 +132,18 @@
                 rel="alternate"
                 hreflang="en"
                 href="//localhost:1313/4-s3cloudtrail/"
+                />
+  </url><url>
+    <loc>//localhost:1313/2-prerequiste/2.5-file/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="//localhost:1313/vi/2-prerequiste/2.5-file/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="//localhost:1313/2-prerequiste/2.5-file/"
                 />
   </url><url>
     <loc>//localhost:1313/5-s3athena/</loc>

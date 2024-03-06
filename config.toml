@@ -13,7 +13,7 @@ home = [ "HTML", "RSS", "JSON"]
   # Git hub repo link
   editURL = ""
   description = ""
-  author = "hung"
+  author = "TDH"
   showVisitedLinks = true
   disableBreadcrumb = false
   disableNextPrev = false
@@ -40,4 +40,6 @@ name = "<i class='fab fa-facebook'></i> AWS Study Group"
 identifier = "AWS Study Group FB"
 url = "https://www.facebook.com/groups/awsstudygroupfcj/"
 weight = 20
+
+
 
