@@ -24,22 +24,20 @@ Log các hành động của **Amazon S3** bằng **AWS CloudTrail** giúp bảo
 
 ![S3ct](/images/1.introduce/12.png)
 
-<!-- ![S3ct](/images/1.introduce/12.png) -->
+**So sánh giữa hai phương án logging**
 
-**So sánh giữa hai cách**
-
-| Log properties                                                                                       | AWS CloudTrail | Amazon S3 server logs |
-| ---------------------------------------------------------------------------------------------------- | :------------: | :-------------------: |
-| Can be forwarded to other systems (Amazon CloudWatch Logs, Amazon CloudWatch Events)                 |      Yes       |          No           |
-| Deliver logs to more than one destination (for example, send the same logs to two different buckets) |      Yes       |          No           |
-| Turn on logs for a subset of objects (prefix)                                                        |      Yes       |          No           |
-| Cross-account log delivery (target and source bucket owned by different accounts)                    |      Yes       |          No           |
-| Integrity validation of log file by using digital signature or hashing                               |      Yes       |          No           |
-| Default or choice of encryption for log files                                                        |      Yes       |          No           |
-| Object operations (by using Amazon S3 APIs)                                                          |      Yes       |          Yes          |
-| Bucket operations (by using Amazon S3 APIs)                                                          |      Yes       |          Yes          |
-| Searchable UI for logs                                                                               |      Yes       |          No           |
-| Fields for Object Lock parameters, Amazon S3 Select properties for log records                       |      Yes       |          No           |
+| Tiêu chí                                                                                       | AWS CloudTrail | Amazon S3 server logs |
+| ---------------------------------------------------------------------------------------------- | :------------: | :-------------------: |
+| Kết hợp với những hệ thống hay service khác (Amazon CloudWatch Logs, Amazon CloudWatch Events) |     **Có**     |         Không         |
+| Gửi log tới một hoặc nhiều destination khác (ví dụ gửi 1 log tới 2 bucket khác nhau)           |     **Có**     |         Không         |
+| Chỉ bật log cho một số object cụ thể (prefix)                                                  |     **Có**     |         Không         |
+| Gửi log xuyên account (bucket khác account)                                                    |     **Có**     |         Không         |
+| Xác thực tính toàn vẹn của log bằng cách sử dụng chữ ký số hoặc hàm băm                        |     **Có**     |         Không         |
+| Mặc định hoặc lựa chọn mã hóa cho log                                                          |     **Có**     |         Không         |
+| Log object operations (sử dụng Amazon S3 APIs)                                                 |     **Có**     |        **Có**         |
+| Log bucket operations (sử dụng Amazon S3 APIs)                                                 |     **Có**     |        **Có**         |
+| Giao diện quản lý log                                                                          |     **Có**     |         Không         |
+| Cho phép Object Lock parameters, Amazon S3 Select chọn log record                              |     **Có**     |         Không         |
 
 Bên cạnh đó, **Amazon Athena** là dịch vụ query tương tác giúp bạn dễ dàng phân tích dữ liệu trong **Amazon S3** bằng SQL tiêu chuẩn. Bạn không cần quản lý bất kỳ cơ sở hạ tầng nào với Athena và bạn chỉ trả tiền cho các truy vấn bạn chạy.
 

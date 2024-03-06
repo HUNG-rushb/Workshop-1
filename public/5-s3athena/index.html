@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" class="js csstransforms3d">
-  <head>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="generator" content="Hugo 0.123.0">
@@ -9,24 +9,24 @@
 
     <link rel="icon" href="../images/favicon.png" type="image/png">
 
-    <title>Port Forwarding :: AWS System Manager</title>
+    <title>Query logs with Athena :: AWS System Manager</title>
 
     
-    <link href="../css/nucleus.css?1709521833" rel="stylesheet">
-    <link href="../css/fontawesome-all.min.css?1709521833" rel="stylesheet">
-    <link href="../css/hybrid.css?1709521833" rel="stylesheet">
-    <link href="../css/featherlight.min.css?1709521833" rel="stylesheet">
-    <link href="../css/perfect-scrollbar.min.css?1709521833" rel="stylesheet">
-    <link href="../css/auto-complete.css?1709521833" rel="stylesheet">
-    <link href="../css/atom-one-dark-reasonable.css?1709521833" rel="stylesheet">
-    <link href="../css/theme.css?1709521833" rel="stylesheet">
-    <link href="../css/hugo-theme.css?1709521833" rel="stylesheet">
+    <link href="../css/nucleus.css?1709716319" rel="stylesheet">
+    <link href="../css/fontawesome-all.min.css?1709716319" rel="stylesheet">
+    <link href="../css/hybrid.css?1709716319" rel="stylesheet">
+    <link href="../css/featherlight.min.css?1709716319" rel="stylesheet">
+    <link href="../css/perfect-scrollbar.min.css?1709716319" rel="stylesheet">
+    <link href="../css/auto-complete.css?1709716319" rel="stylesheet">
+    <link href="../css/atom-one-dark-reasonable.css?1709716319" rel="stylesheet">
+    <link href="../css/theme.css?1709716319" rel="stylesheet">
+    <link href="../css/hugo-theme.css?1709716319" rel="stylesheet">
     
-    <link href="../css/theme-workshop.css?1709521833" rel="stylesheet">
+    <link href="../css/theme-workshop.css?1709716319" rel="stylesheet">
     
     
 
-    <script src="../js/jquery-3.3.1.min.js?1709521833"></script>
+    <script src="../js/jquery-3.3.1.min.js?1709716319"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="../js/lunr.min.js?1709521833"></script>
-<script type="text/javascript" src="../js/auto-complete.js?1709521833"></script>
+<script type="text/javascript" src="../js/lunr.min.js?1709716319"></script>
+<script type="text/javascript" src="../js/auto-complete.js?1709716319"></script>
 <script type="text/javascript">
     
-        var baseurl = "\/";
+        var baseurl = "\/\/localhost:1313\/";
     
 </script>
-<script type="text/javascript" src="../js/search.js?1709521833"></script>
+<script type="text/javascript" src="../js/search.js?1709716319"></script>
 
     
   </div>
@@ -120,6 +120,158 @@
           
       </a>
       
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/2-prerequiste/2.1-2buckets/" title="Create 2 bucket " class="dd-item 
+        
+        
+        
+        ">
+      <a href="../2-prerequiste/2.1-2buckets/">
+           <b> 2.1 </b> Create 2 bucket 
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/2-prerequiste/2.2-permission/" title="Update logging permission " class="dd-item 
+        
+        
+        
+        ">
+      <a href="../2-prerequiste/2.2-permission/">
+           <b> 2.2 </b> Update logging permission 
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/2-prerequiste/2.3-upload/" title="Upload file to S3 bucket " class="dd-item 
+        
+        
+        
+        ">
+      <a href="../2-prerequiste/2.3-upload/">
+           <b> 2.3 </b> Upload file to S3 bucket 
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/2-prerequiste/2.4-policy/" title="Edit policy " class="dd-item 
+        
+        
+        
+        ">
+      <a href="../2-prerequiste/2.4-policy/">
+           <b> 2.4 </b> Edit policy 
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/2-prerequiste/2.5-file/" title="Access the file " class="dd-item 
+        
+        
+        
+        ">
+      <a href="../2-prerequiste/2.5-file/">
+           <b> 2.5 </b> Access the file 
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
               
     </li>
   
@@ -146,6 +298,74 @@
           
       </a>
       
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/3-s3sal/3.1-sal/" title="Enable S3 Server access logging" class="dd-item 
+        
+        
+        
+        ">
+      <a href="../3-s3sal/3.1-sal/">
+           <b> 3.1 </b> Enable S3 Server access logging
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/3-s3sal/3.2-log/" title="Check logs" class="dd-item 
+        
+        
+        
+        ">
+      <a href="../3-s3sal/3.2-log/">
+           <b> 3.2 </b> Check logs
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
               
     </li>
   
@@ -160,13 +380,13 @@
  
   
     
-    <li data-nav-id="/4-s3cloudtrail/" title="Manage session logs" class="dd-item 
+    <li data-nav-id="/4-s3cloudtrail/" title="Logging with AWS CloudTrail" class="dd-item 
         
         
         
         ">
       <a href="../4-s3cloudtrail/">
-           <b> 4. </b> Manage session logs
+           <b> 4. </b> Logging with AWS CloudTrail
           
             <i class="fas fa-check read-icon"></i>
           
@@ -186,13 +406,13 @@
  
   
     
-    <li data-nav-id="/5-s3athena/" title="Port Forwarding" class="dd-item 
+    <li data-nav-id="/5-s3athena/" title="Query logs with Athena" class="dd-item 
         
         active
         
         ">
       <a href="../5-s3athena/">
-           <b> 5. </b> Port Forwarding
+           <b> 5. </b> Query logs with Athena
           
             <i class="fas fa-check read-icon"></i>
           
@@ -212,13 +432,13 @@
  
   
     
-    <li data-nav-id="/6-cleanup/" title="Clean up resources" class="dd-item 
+    <li data-nav-id="/6-cleanup/" title="Clean up" class="dd-item 
         
         
         
         ">
       <a href="../6-cleanup/">
-          <b>6. </b>Clean up resources
+           <b> 6. </b> Clean up
           
             <i class="fas fa-check read-icon"></i>
           
@@ -265,7 +485,7 @@
                   
                     
                     
-                      <option id="en" value="/5-s3athena/" selected>English</option>
+                      <option id="en" value="//localhost:1313/5-s3athena/" selected>English</option>
                     
                   
               
@@ -279,7 +499,7 @@
                   
                     
                     
-                      <option id="vi" value="/vi/5-s3athena/">Tiếng Việt</option>
+                      <option id="vi" value="//localhost:1313/vi/5-s3athena/">Tiếng Việt</option>
                     
                   
               
@@ -366,7 +586,7 @@
             
           
           
-            <a href='../'>AWS S3 Logging</a> > Port Forwarding
+            <a href='../'>AWS S3 Logging</a> > Query logs with Athena
           
         
           
@@ -377,15 +597,7 @@
                 
                     <div class="progress">
     <div class="wrapper">
-<nav id="TableOfContents">
-  <ul>
-    <li>
-      <ul>
-        <li></li>
-      </ul>
-    </li>
-  </ul>
-</nav>
+<nav id="TableOfContents"></nav>
     </div>
 </div>
 
@@ -401,7 +613,7 @@
           
             <h1>
               
-              Port Forwarding
+              Query logs with Athena
             </h1>
           
 
@@ -409,89 +621,63 @@
 
 
 
-	
-<div class="notices info" ><p><strong>Port Forwarding</strong> is a useful way to redirect network traffic from one IP address - Port to another IP address - Port. With <strong>Port Forwarding</strong> we can access an EC2 instance located in the private subnet from our workstation.</p>
-</div>
-
-<p>We will configure <strong>Port Forwarding</strong> for the RDP connection between our machine and <strong>Private Windows Instance</strong> located in the private subnet we created for this exercise.</p>
-<p><img alt="port-fwd" src="../images/arc-04.png"></p>
-<h4 id="create-iam-user-with-permission-to-connect-ssm">Create IAM user with permission to connect SSM</h4>
+	<p>Using <strong>Athena</strong> with <strong>CloudTrail</strong> logs is even easier than server access logs. With server access logs, you had to go to the Athena console to create a database and table, but with <strong>CloudTrail</strong> logging, <strong>Athena</strong> will automatically create a table for you.</p>
+<p>To use <strong>Athena</strong> with <strong>CloudTrail</strong> logs, simply go to the <strong>CloudTrail</strong> event history and select Run advanced queries in Amazon Athena.</p>
 <ol>
-<li>Go to <a href="https://console.aws.amazon.com/iamv2/home">IAM service management console</a>
-<ul>
-<li>Click <strong>Users</strong> , then click <strong>Add users</strong>.</li>
-</ul>
-</li>
+<li>Go to <a href="https://console.aws.amazon.com/cloudtrail/">CloudTrail console</a>. On left panel, select <strong>Event history</strong>, select <strong>Create Athena table</strong>.</li>
 </ol>
-<p><img alt="FWD" src="../images/5.fwd/001-fwd.png"></p>
+<p><img alt="S3" src="../images/5.athena/51.png"></p>
 <ol start="2">
-<li>At the <strong>Add user</strong> page.
-<ul>
-<li>In the <strong>User name</strong> field, enter <strong>Portfwd</strong>.</li>
-<li>Click on <strong>Access key - Programmatic access</strong>.</li>
-<li>Click <strong>Next: Permissions</strong>.</li>
-</ul>
-</li>
+<li>for <strong>Storage location</strong>, select bucket <strong>aws-cloud-trail-logs-workshop</strong> which we are using to store logs then select <strong>Create table</strong>.</li>
 </ol>
-<p><img alt="FWD" src="../images/5.fwd/002-fwd.png"></p>
+<p><img alt="S3" src="../images/5.athena/52.png"></p>
 <ol start="3">
-<li>
-<p>Click <strong>Attach existing policies directly</strong>.</p>
-<ul>
-<li>In the search box, enter <strong>ssm</strong>.</li>
-<li>Click on <strong>AmazonSSMFullAccess</strong>.</li>
-<li>Click <strong>Next: Tags</strong>, click <strong>Next: Reviews</strong>.</li>
-<li>Click <strong>Create user</strong>.</li>
-</ul>
-</li>
-<li>
-<p>Save <strong>Access key ID</strong> and <strong>Secret access key</strong> information to perform AWS CLI configuration.</p>
-</li>
+<li>Confirm Athena table <strong>cloudtrail_logs_aws_cloudtrail_logs_workshop</strong> created.</li>
 </ol>
-<h4 id="install-and-configure-aws-cli-and-session-manager-plugin">Install and Configure AWS CLI and Session Manager Plugin</h4>
-<p>To perform this hands-on, make sure your workstation has <a href="../">AWS CLI</a> and <a href="https://docs.aws.amazon.com/systems-manager/latest/userguide/session">Session Manager Plugin</a> installed -manager-working-with-install-plugin.html)</p>
-<p>More hands-on tutorials on installing and configuring the AWS CLI can be found <a href="https://000011.awsstudygroup.com/">here</a>.</p>
-
-<div class="notices tip" ><p>With Windows, when extracting the <strong>Session Manager Plugin</strong> installation folder, run the <strong>install.bat</strong> file with Administrator permission to perform the installation.</p>
-</div>
-
-<h4 id="implement-portforwarding">Implement Portforwarding</h4>
-<ol>
-<li>Run the command below in <strong>Command Prompt</strong> on your machine to configure <strong>Port Forwarding</strong>.</li>
+<p><img alt="S3" src="../images/5.athena/53.png"></p>
+<ol start="4">
+<li>Find select service <strong>Athena</strong>, then select <strong>Launch query editor</strong>.</li>
 </ol>
-<pre tabindex="0"><code>   aws ssm start-session --target (your ID windows instance) --document-name AWS-StartPortForwardingSession --parameters portNumber=&#34;3389&#34;,localPortNumber=&#34;9999&#34; --region (your region)
-</code></pre>
-<div class="notices tip" ><p><strong>Windows Private Instance</strong> <strong>Instance ID</strong> information can be found when you view the EC2 Windows Private Instance server details.</p>
-</div>
-
-<ul>
-<li>Example command:</li>
-</ul>
-<pre tabindex="0"><code>C:\Windows\system32&gt;aws ssm start-session --target i-06343d7377486760c --document-name AWS-StartPortForwardingSession --parameters portNumber=&#34;3389&#34;,localPortNumber=&#34;9999&#34; --region ap-southeast-1
-</code></pre>
-<div class="notices warning" ><p>If your command gives an error like below: <br>
-SessionManagerPlugin is not found. Please refer to SessionManager Documentation here: <a href="http://docs.aws.amazon.com/console/systems-manager/session-manager-plugin-not-found">http://docs.aws.amazon.com/console/systems-manager/session-manager-plugin-not-found</a><br>
-Prove that you have not successfully installed the Session Manager Plugin. You may need to relaunch <strong>Command Prompt</strong> after installing <strong>Session Manager Plugin</strong>.</p>
-</div>
-
-<ol start="2">
-<li>Connect to the <strong>Private Windows Instance</strong> you created using the <strong>Remote Desktop</strong> tool on your workstation.
-<ul>
-<li>In the Computer section: enter <strong>localhost:9999</strong>.</li>
-</ul>
-</li>
+<p><img alt="S3" src="../images/5.athena/53-1.png">
+<img alt="S3" src="../images/5.athena/53-2.png"></p>
+<ol start="5">
+<li>If this is the first time you use Athena, select <strong>Edit settings</strong>, if not, skip to step 10.</li>
 </ol>
-<p><img alt="FWD" src="../images/5.fwd/003-fwd.png"></p>
-<ol start="3">
-<li>Return to the administration interface of the System Manager - Session Manager service.
-<ul>
-<li>Click tab <strong>Session history</strong>.</li>
-<li>We will see session logs with Document name <strong>AWS-StartPortForwardingSession</strong>.</li>
-</ul>
-</li>
+<p><img alt="S3" src="../images/5.athena/54.png"></p>
+<ol start="6">
+<li>Click <strong>Browse S3</strong>.</li>
 </ol>
-<p><img alt="FWD" src="../images/5.fwd/004-fwd.png"></p>
-<p>Congratulations on completing the lab on how to use Session Manager to connect and store session logs in S3 bucket. Remember to perform resource cleanup to avoid unintended costs.</p>
+<p><img alt="S3" src="../images/5.athena/55.png"></p>
+<ol start="7">
+<li>Select 1 bucket to store query&rsquo;s result, here we choose bucket <strong>logging-workshop-destination</strong>.</li>
+</ol>
+<p><img alt="S3" src="../images/5.athena/56.png"></p>
+<ol start="8">
+<li>Check and click <strong>Save</strong>.</li>
+</ol>
+<p><img alt="S3" src="../images/5.athena/57.png"></p>
+<ol start="9">
+<li>Check and click <strong>Editor</strong> to return.</li>
+</ol>
+<p><img alt="S3" src="../images/5.athena/58.png"></p>
+<ol start="10">
+<li>Copy the query into the editor, make sure you are using the right table.This query will filter operation <strong>GetObject</strong> whihc have eventsource is <strong>s3.amazonaws.com</strong>. select <strong>Run</strong>.</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">SELECT</span> <span style="color:#f92672">*</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">FROM</span> cloudtrail_logs_aws_cloudtrail_logs_workshop
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">WHERE</span>
+</span></span><span style="display:flex;"><span>    eventsource <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;s3.amazonaws.com&#39;</span> <span style="color:#66d9ef">AND</span>
+</span></span><span style="display:flex;"><span>    eventname <span style="color:#66d9ef">in</span> (<span style="color:#e6db74">&#39;GetObject&#39;</span>)
+</span></span></code></pre></div><p><img alt="S3" src="../images/5.athena/59.png"></p>
+<ol start="11">
+<li>Check the result below.</li>
+</ol>
+<p><img alt="S3" src="../images/5.athena/60.png"></p>
+<ol start="12">
+<li>Finally, run this query to drop the table.</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">DROP</span> <span style="color:#66d9ef">TABLE</span> <span style="color:#f92672">`</span>cloudtrail_logs_aws_cloudtrail_logs_workshop<span style="color:#f92672">`</span>
+</span></span></code></pre></div><p><img alt="S3" src="../images/6.clean/61.png"></p>
 
 
 
@@ -556,6 +742,21 @@ Prove that you have not successfully installed the Session Manager Plugin. You m
 
                     
                     
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
                     
 
                     
@@ -574,6 +775,107 @@ Prove that you have not successfully installed the Session Manager Plugin. You m
                     
                     
 
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
                     
             
         
@@ -639,10 +941,10 @@ Prove that you have not successfully installed the Session Manager Plugin. You m
 	 
 	 
 		
-			<a class="nav nav-prev" href="../4-s3cloudtrail/" title="Manage session logs"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="../4-s3cloudtrail/" title="Logging with AWS CloudTrail"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="../6-cleanup/" title="Clean up resources" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="../6-cleanup/" title="Clean up" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -652,19 +954,19 @@ Prove that you have not successfully installed the Session Manager Plugin. You m
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="../js/clipboard.min.js?1709521833"></script>
-    <script src="../js/perfect-scrollbar.min.js?1709521833"></script>
-    <script src="../js/perfect-scrollbar.jquery.min.js?1709521833"></script>
-    <script src="../js/jquery.sticky.js?1709521833"></script>
-    <script src="../js/featherlight.min.js?1709521833"></script>
-    <script src="../js/highlight.pack.js?1709521833"></script>
+    <script src="../js/clipboard.min.js?1709716319"></script>
+    <script src="../js/perfect-scrollbar.min.js?1709716319"></script>
+    <script src="../js/perfect-scrollbar.jquery.min.js?1709716319"></script>
+    <script src="../js/jquery.sticky.js?1709716319"></script>
+    <script src="../js/featherlight.min.js?1709716319"></script>
+    <script src="../js/highlight.pack.js?1709716319"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="../js/modernizr.custom-3.6.0.js?1709521833"></script>
-    <script src="../js/learn.js?1709521833"></script>
-    <script src="../js/hugo-learn.js?1709521833"></script>
+    <script src="../js/modernizr.custom-3.6.0.js?1709716319"></script>
+    <script src="../js/learn.js?1709716319"></script>
+    <script src="../js/hugo-learn.js?1709716319"></script>
 
-    <link href="../mermaid/mermaid.css?1709521833" rel="stylesheet" />
-    <script src="../mermaid/mermaid.js?1709521833"></script>
+    <link href="../mermaid/mermaid.css?1709716319" rel="stylesheet" />
+    <script src="../mermaid/mermaid.js?1709716319"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

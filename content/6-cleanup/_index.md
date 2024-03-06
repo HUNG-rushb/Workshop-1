@@ -1,83 +1,49 @@
-+++
-title = "Clean up resources"
-date = 2022
-weight = 6
-chapter = false
-pre = "<b>6. </b>"
-+++
+---
+title: "Clean up"
+date: "`r Sys.Date()`"
+weight: 6
+chapter: false
+pre: " <b> 6. </b> "
+---
 
 We will take the following steps to delete the resources we created in this exercise.
 
-#### Delete EC2 instance
+### Xóa Athena query
 
-1. Go to [EC2 service management console](https://console.aws.amazon.com/ec2/v2/home)
-   + Click **Instances**.
-   + Select both **Public Linux Instance** and **Private Windows Instance** instances.
-   + Click **Instance state**.
-   + Click **Terminate instance**, then click **Terminate** to confirm.
+1. Find and select service **Athena**, then select **Launch query editor**, select tab **Settings**, click **Manage**.
 
-2. Go to [IAM service management console](https://console.aws.amazon.com/iamv2/home#/home)
-   + Click **Roles**.
-   + In the search box, enter **SSM**.
-   + Click to select **SSM-Role**.
-   + Click **Delete**, then enter the role name **SSM-Role** and click **Delete** to delete the role.
+![S3](/images/6.clean/62.png)
 
-![Clean](/images/6.clean/001-clean.png)
+2. Click _X_ to delete the connections to bucket, click **Save**.
 
-3. Click **Users**.
-   + Click on user **Portfwd**.
-   + Click **Delete**, then enter the user name **Portfwd** and click **Delete** to delete the user.
+![S3](/images/6.clean/63.png)
 
-#### Delete S3 bucket
+### Xóa CloudTrail
 
-1. Access [System Manager - Session Manager service management console](https://console.aws.amazon.com/systems-manager/session-manager).
-   + Click the **Preferences** tab.
-   + Click **Edit**.
-   + Scroll down.
-   + In the section **S3 logging**.
-   + Uncheck **Enable** to disable logging.
-   + Scroll down.
-   + Click **Save**.
+3. Find and select service **CloudTrail**, select **Trails** on left panel. Select trail **S3_logging_workshop**, then select **Delete**.
 
-2. Go to [S3 service management console](https://s3.console.aws.amazon.com/s3/home)
-   + Click on the S3 bucket we created for this lab. (Example: lab-fcj-bucket-0001 )
-   + Click **Empty**.
-   + Enter **permanently delete**, then click **Empty** to proceed to delete the object in the bucket.
-   + Click **Exit**.
+![S3](/images/6.clean/90.png)
 
-3. After deleting all objects in the bucket, click **Delete**
+4. Confirm **Delete**.
 
-![Clean](/images/6.clean/002-clean.png)
+![S3](/images/6.clean/91.png)
 
-4. Enter the name of the S3 bucket, then click **Delete bucket** to proceed with deleting the S3 bucket.
+### Xóa S3 buckets
 
-![Clean](/images/6.clean/003-clean.png)
+5. Find and select service **S3**, select bucket **logging_workshop**. We have to empty the bucket before delete it. Select all files then click **Delete**.
 
-#### Delete VPC Endpoints
+![S3](/images/6.clean/64.png)
 
-1. Go to [VPC service management console](https://console.aws.amazon.com/vpc/home)
-   + Click **Endpoints**.
-   + Select the 4 endpoints we created for the lab including **SSM**, **SSMMESSAGES**, **EC2MESSAGES**, **S3GW**.
-   + Click **Actions**.
-   + Click **Delete VPC endpoints**.
+6. Confirmto delete. click **Delete objects**.
 
-![Clean](/images/6.clean/004-clean.png)
+![S3](/images/6.clean/65.png)
 
-2. In the confirm box, enter **delete**.
-   + Click **Delete** to proceed with deleting endpoints.
+7. Return to buckets list, then select bucket **logging_workshop**, select **Delete**.
 
-3. Click the refresh icon, check that all endpoints have been deleted before proceeding to the next step.
+![S3](/images/6.clean/66.png)
 
-![Clean](/images/6.clean/005-clean.png)
+8. Confirm bucket's name and click **Delete bucket**.
 
-#### Delete VPC
+![S3](/images/6.clean/67.png)
 
-1. Go to [VPC service management console](https://console.aws.amazon.com/vpc/home)
-   + Click **Your VPCs**.
-   + Click on **Lab VPC**.
-   + Click **Actions**.
-   + Click **Delete VPC**.
-
-2. In the confirm box, enter **delete** to confirm, click **Delete** to delete **Lab VPC** and related resources.
-
-![Clean](/images/6.clean/006-clean.png)
+9. Repeat delete step from step 5 to delete 2 remainings buckets, **logging-workshop-destinations** và **aws-cloudtrail-log-workshop**.

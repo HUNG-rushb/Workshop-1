@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="vi" class="js csstransforms3d">
-  <head>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="generator" content="Hugo 0.123.0">
@@ -12,21 +12,21 @@
     <title>S3 Server Access Logging :: AWS System Manager</title>
 
     
-    <link href="../../css/nucleus.css?1709521833" rel="stylesheet">
-    <link href="../../css/fontawesome-all.min.css?1709521833" rel="stylesheet">
-    <link href="../../css/hybrid.css?1709521833" rel="stylesheet">
-    <link href="../../css/featherlight.min.css?1709521833" rel="stylesheet">
-    <link href="../../css/perfect-scrollbar.min.css?1709521833" rel="stylesheet">
-    <link href="../../css/auto-complete.css?1709521833" rel="stylesheet">
-    <link href="../../css/atom-one-dark-reasonable.css?1709521833" rel="stylesheet">
-    <link href="../../css/theme.css?1709521833" rel="stylesheet">
-    <link href="../../css/hugo-theme.css?1709521833" rel="stylesheet">
+    <link href="../../css/nucleus.css?1709716319" rel="stylesheet">
+    <link href="../../css/fontawesome-all.min.css?1709716319" rel="stylesheet">
+    <link href="../../css/hybrid.css?1709716319" rel="stylesheet">
+    <link href="../../css/featherlight.min.css?1709716319" rel="stylesheet">
+    <link href="../../css/perfect-scrollbar.min.css?1709716319" rel="stylesheet">
+    <link href="../../css/auto-complete.css?1709716319" rel="stylesheet">
+    <link href="../../css/atom-one-dark-reasonable.css?1709716319" rel="stylesheet">
+    <link href="../../css/theme.css?1709716319" rel="stylesheet">
+    <link href="../../css/hugo-theme.css?1709716319" rel="stylesheet">
     
-    <link href="../../css/theme-workshop.css?1709521833" rel="stylesheet">
+    <link href="../../css/theme-workshop.css?1709716319" rel="stylesheet">
     
     
 
-    <script src="../../js/jquery-3.3.1.min.js?1709521833"></script>
+    <script src="../../js/jquery-3.3.1.min.js?1709716319"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="../../js/lunr.min.js?1709521833"></script>
-<script type="text/javascript" src="../../js/auto-complete.js?1709521833"></script>
+<script type="text/javascript" src="../../js/lunr.min.js?1709716319"></script>
+<script type="text/javascript" src="../../js/auto-complete.js?1709716319"></script>
 <script type="text/javascript">
     
-        var baseurl = "\/\/vi";
+        var baseurl = "\/\/localhost:1313\/\/vi";
     
 </script>
-<script type="text/javascript" src="../../js/search.js?1709521833"></script>
+<script type="text/javascript" src="../../js/search.js?1709716319"></script>
 
     
   </div>
@@ -120,6 +120,158 @@
           
       </a>
       
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/2-prerequiste/2.1-2buckets/" title="Tạo 2 bucket" class="dd-item 
+        
+        
+        
+        ">
+      <a href="../../vi/2-prerequiste/2.1-2buckets/">
+           <b> 2.1 </b> Tạo 2 bucket
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/2-prerequiste/2.2-permission/" title="Cập nhật quyền tạo log" class="dd-item 
+        
+        
+        
+        ">
+      <a href="../../vi/2-prerequiste/2.2-permission/">
+           <b> 2.2 </b> Cập nhật quyền tạo log
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/2-prerequiste/2.3-upload/" title="Upload file vào bucket" class="dd-item 
+        
+        
+        
+        ">
+      <a href="../../vi/2-prerequiste/2.3-upload/">
+           <b> 2.3 </b> Upload file vào bucket
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/2-prerequiste/2.4-policy/" title="Thêm policy cho bucket" class="dd-item 
+        
+        
+        
+        ">
+      <a href="../../vi/2-prerequiste/2.4-policy/">
+           <b> 2.4 </b> Thêm policy cho bucket
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/2-prerequiste/2.5-file/" title="Truy cập file thành công" class="dd-item 
+        
+        
+        
+        ">
+      <a href="../../vi/2-prerequiste/2.5-file/">
+           <b> 2.5 </b> Truy cập file thành công
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
               
     </li>
   
@@ -146,6 +298,74 @@
           
       </a>
       
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/3-s3sal/3.1-sal/" title="Bật S3 Server Access Logging" class="dd-item 
+        
+        
+        
+        ">
+      <a href="../../vi/3-s3sal/3.1-sal/">
+           <b> 3. </b> Bật S3 Server Access Logging
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/3-s3sal/3.2-log/" title="Kiểm tra log" class="dd-item 
+        
+        
+        
+        ">
+      <a href="../../vi/3-s3sal/3.2-log/">
+           <b> 3. </b> Kiểm tra log
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
               
     </li>
   
@@ -212,13 +432,13 @@
  
   
     
-    <li data-nav-id="/vi/6-cleanup/" title="Dọn dẹp tài nguyên  " class="dd-item 
+    <li data-nav-id="/vi/6-cleanup/" title="Dọn dẹp tài nguyên" class="dd-item 
         
         
         
         ">
       <a href="../../vi/6-cleanup/">
-          <b>6. </b>Dọn dẹp tài nguyên  
+           <b> 6. </b> Dọn dẹp tài nguyên
           
             <i class="fas fa-check read-icon"></i>
           
@@ -265,7 +485,7 @@
                   
                     
                     
-                      <option id="en" value="/3-s3sal/">English</option>
+                      <option id="en" value="//localhost:1313/3-s3sal/">English</option>
                     
                   
               
@@ -279,7 +499,7 @@
                   
                     
                     
-                      <option id="vi" value="/vi/3-s3sal/" selected>Tiếng Việt</option>
+                      <option id="vi" value="//localhost:1313/vi/3-s3sal/" selected>Tiếng Việt</option>
                     
                   
               
@@ -381,7 +601,7 @@
   <ul>
     <li>
       <ul>
-        <li><a href="#kích-hoạt-server-access-logging">Kích hoạt Server access logging</a></li>
+        <li><a href="#nội-dung">Nội dung</a></li>
       </ul>
     </li>
   </ul>
@@ -410,61 +630,12 @@
 
 
 	<p>Trong bước này, chúng ta sẽ thực hiện tạo sử dụng tính năng <strong>Server access logging</strong>.</p>
-<p>Server access logging cung cấp cho bạn khả năng hiển thị các hoạt động cấp đối tượng chi tiết trên dữ liệu của bạn. Log là tệp văn bản có một dòng cho mỗi bản ghi nhật ký. Mỗi log đại diện cho một yêu cầu và bao gồm các trường được phân cách bằng dấu cách.</p>
-<p>Các trường liên quan đến operation, requester, resource và thông tin session. Dưới đây là một ví dụ:</p>
-<pre tabindex="0"><code>79a59df900b949e55d96a1e698fbacedfd6e09d98eacf8f8d5218e7cd47ef2be awsexamplebucket1 [06/Feb/2019:00:00:38 +0000] 192.0.2.3 79a59df900b949e55d96a1e698fbacedfd6e09d98eacf8f8d5218e7cd47ef2be 3E57427F3EXAMPLE REST.GET.VERSIONING - &#34;GET /awsexamplebucket1?versioning HTTP/1.1&#34; 200 - 113 - 7 - &#34;-&#34; &#34;S3Console/0.4&#34; - s9lzHYrFp76ZVxRcpX9+5cjAnEH2ROuNkd2BHfIa6UkFVdtjf5mKR3/eTPFvsiP/XV/VLi31234= SigV2 ECDHE-RSA-AES128-GCM-SHA256 AuthHeader awsexamplebucket1.s3.us-west-1.amazonaws.com TLSV1.1
-</code></pre><h3 id="kích-hoạt-server-access-logging">Kích hoạt Server access logging</h3>
+<h3 id="nội-dung">Nội dung</h3>
 <ol>
-<li>Trong giao diện S3, chọn bucket <strong>logging-workshop</strong>.</li>
+<li><a href="../../vi/3-s3sal/3.1-sal/">Bật S3 Server Access Logging</a></li>
+<li><a href="../../vi/3-s3sal/3.2-log/">Kiểm tra log</a></li>
 </ol>
-<p><img alt="S3console" src="../../images/3.connect/30.png"></p>
-<ol start="2">
-<li>Trong giao diện bucket, chọn <strong>Properties</strong>.</li>
-</ol>
-<p><img alt="CreateBucket" src="../../images/3.connect/31.png"></p>
-<ol start="3">
-<li>Kéo xuống tại muc <strong>Server access logging</strong>, chọn <strong>Edit</strong></li>
-</ol>
-<p><img alt="CreateBucket" src="../../images/3.connect/32.png"></p>
-<ol start="4">
-<li>Chọn <strong>Enable</strong>, sau đó chọn <strong>Brow S3</strong> để chọn bucket lưu log.</li>
-</ol>
-<p><img alt="CreateBucket" src="../../images/3.connect/33.png"></p>
-<ol start="5">
-<li>Chọn bucket <strong>logging-workshop-destination</strong>, sau đó nhấn <strong>Choose destination</strong>.</li>
-</ol>
-<p><img alt="CreateBucket" src="../../images/3.connect/34.png"></p>
-<ol start="6">
-<li>Review lại bucket lưu log, sau đó nhấn <strong>Save changes</strong>.</li>
-</ol>
-<p><img alt="CreateBucket" src="../../images/3.connect/35.png"></p>
-<ol start="7">
-<li>Xác nhận <strong>Server access logging</strong> đã được bật.</li>
-</ol>
-<p><img alt="CreateBucket" src="../../images/3.connect/36.png"></p>
-<ol start="8">
-<li>
-<p>Mở một tab ẩn danh mới và nhập URL truy cập tới file chúng ta đã lưu.</p>
-</li>
-<li>
-<p>Quay về giao diện buckets, chọn bucket <strong>logging-workshop-destination</strong>, chờ khoảng 15 phút, refresh lại bucket.</p>
-</li>
-</ol>
-<p><img alt="CreateBucket" src="../../images/3.connect/37.png"></p>
-<ol start="10">
-<li>Chúng ta sẽ thấy những file log đã được tạo ra. Chọn vào 1 file log.</li>
-</ol>
-<p><img alt="CreateBucket" src="../../images/3.connect/38.png"></p>
-<ol start="11">
-<li>Chúng ta có thể thấy thông tin file log này. Chọn <strong>Download</strong> và mở file log ra</li>
-</ol>
-<p><img alt="CreateBucket" src="../../images/3.connect/39.png"></p>
-<ol start="12">
-<li>File log sẽ có cấu trúc như sau:</li>
-</ol>
-<pre tabindex="0"><code>b07c1e6c73fc3be646182d0400a50638e0703b6352275b2d165aa35f9791c572 logging-workshop [03/Mar/2024:12:52:26 +0000] 118.69.159.186 arn:aws:iam::928738046450:user/hung 2ET0N53Y32R632Q5 REST.GET.OWNERSHIP_CONTROLS - &#34;GET /logging-workshop?ownershipControls= HTTP/1.1&#34; 200 - 193 - 53 53 &#34;-&#34; &#34;S3Console/0.4, aws-internal/3 aws-sdk-java/1.12.488 Linux/5.10.209-175.858.amzn2int.x86_64 OpenJDK_64-Bit_Server_VM/25.372-b08 java/1.8.0_372 vendor/Oracle_Corporation cfg/retry-mode/standard&#34; - xqa7XzBU4q1xnx4NmkVBFhDsnt0jk07Slo9F3j2kvD0/6zSveFBzQ5t+Zrfs/me6L4epr6/dG3k= SigV4 ECDHE-RSA-AES128-GCM-SHA256 AuthHeader s3.ap-southeast-1.amazonaws.com TLSv1.2 - -
-b07c1e6c73fc3be646182d0400a50638e0703b6352275b2d165aa35f9791c572 logging-workshop [03/Mar/2024:12:52:28 +0000] 118.69.159.186 arn:aws:iam::928738046450:user/hung YP9K97RHY7C5JPBC REST.GET.OBJECT_TAGGING S3_logging_workshop.txt &#34;GET /logging-workshop/S3_logging_workshop.txt?tagging= HTTP/1.1&#34; 200 - 115 - 13 10 &#34;-&#34; &#34;S3Console/0.4, aws-internal/3 aws-sdk-java/1.12.488 Linux/5.10.209-175.858.amzn2int.x86_64 OpenJDK_64-Bit_Server_VM/25.372-b08 java/1.8.0_372 vendor/Oracle_Corporation cfg/retry-mode/standard&#34; - nGxxv80fXE5xGWiS6C7OIg7/ncxoVho61Lmw9+qyveqdOBbiqRD4HJZf8qU90j0IeUXNGmwcSwA= SigV4 ECDHE-RSA-AES128-GCM-SHA256 AuthHeader s3.ap-southeast-1.amazonaws.com TLSv1.2 - -
-</code></pre>
+
 
 
 
@@ -528,8 +699,90 @@ b07c1e6c73fc3be646182d0400a50638e0703b6352275b2d165aa35f9791c572 logging-worksho
 
                     
                     
+                        
+                    
                     
 
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
                     
             
         
@@ -545,6 +798,24 @@ b07c1e6c73fc3be646182d0400a50638e0703b6352275b2d165aa35f9791c572 logging-worksho
 
                     
                     
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
                     
 
                     
@@ -556,8 +827,24 @@ b07c1e6c73fc3be646182d0400a50638e0703b6352275b2d165aa35f9791c572 logging-worksho
             
                 
                     
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
                         
-                        
+            
+            
+                
                     
                 
                 
@@ -611,10 +898,10 @@ b07c1e6c73fc3be646182d0400a50638e0703b6352275b2d165aa35f9791c572 logging-worksho
 	 
 	 
 		
-			<a class="nav nav-prev" href="../../vi/2-prerequiste/" title="Các bước chuẩn bị"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="../../vi/2-prerequiste/2.5-file/" title="Truy cập file thành công"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="../../vi/4-s3cloudtrail/" title="Logging với AWS CloudTrail" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="../../vi/3-s3sal/3.1-sal/" title="Bật S3 Server Access Logging" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -624,19 +911,19 @@ b07c1e6c73fc3be646182d0400a50638e0703b6352275b2d165aa35f9791c572 logging-worksho
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="../../js/clipboard.min.js?1709521833"></script>
-    <script src="../../js/perfect-scrollbar.min.js?1709521833"></script>
-    <script src="../../js/perfect-scrollbar.jquery.min.js?1709521833"></script>
-    <script src="../../js/jquery.sticky.js?1709521833"></script>
-    <script src="../../js/featherlight.min.js?1709521833"></script>
-    <script src="../../js/highlight.pack.js?1709521833"></script>
+    <script src="../../js/clipboard.min.js?1709716319"></script>
+    <script src="../../js/perfect-scrollbar.min.js?1709716319"></script>
+    <script src="../../js/perfect-scrollbar.jquery.min.js?1709716319"></script>
+    <script src="../../js/jquery.sticky.js?1709716319"></script>
+    <script src="../../js/featherlight.min.js?1709716319"></script>
+    <script src="../../js/highlight.pack.js?1709716319"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="../../js/modernizr.custom-3.6.0.js?1709521833"></script>
-    <script src="../../js/learn.js?1709521833"></script>
-    <script src="../../js/hugo-learn.js?1709521833"></script>
+    <script src="../../js/modernizr.custom-3.6.0.js?1709716319"></script>
+    <script src="../../js/learn.js?1709716319"></script>
+    <script src="../../js/hugo-learn.js?1709716319"></script>
 
-    <link href="../../mermaid/mermaid.css?1709521833" rel="stylesheet" />
-    <script src="../../mermaid/mermaid.js?1709521833"></script>
+    <link href="../../mermaid/mermaid.css?1709716319" rel="stylesheet" />
+    <script src="../../mermaid/mermaid.js?1709716319"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

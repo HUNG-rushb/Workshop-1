@@ -1,91 +1,73 @@
 ---
-title : "Port Forwarding"
-date :  "`r Sys.Date()`" 
-weight : 5 
-chapter : false
-pre : " <b> 5. </b> "
+title: "Query logs with Athena"
+date: "`r Sys.Date()`"
+weight: 5
+chapter: false
+pre: " <b> 5. </b> "
 ---
 
-{{% notice info %}}
-**Port Forwarding** is a useful way to redirect network traffic from one IP address - Port to another IP address - Port. With **Port Forwarding** we can access an EC2 instance located in the private subnet from our workstation.
-{{% /notice %}}
+Using **Athena** with **CloudTrail** logs is even easier than server access logs. With server access logs, you had to go to the Athena console to create a database and table, but with **CloudTrail** logging, **Athena** will automatically create a table for you.
 
-We will configure **Port Forwarding** for the RDP connection between our machine and **Private Windows Instance** located in the private subnet we created for this exercise.
+To use **Athena** with **CloudTrail** logs, simply go to the **CloudTrail** event history and select Run advanced queries in Amazon Athena.
 
-![port-fwd](/images/arc-04.png) 
+1. Go to [CloudTrail console](https://console.aws.amazon.com/cloudtrail/). On left panel, select **Event history**, select **Create Athena table**.
 
-#### Create IAM user with permission to connect SSM
+![S3](/images/5.athena/51.png)
 
-1. Go to [IAM service management console](https://console.aws.amazon.com/iamv2/home)
-   + Click **Users** , then click **Add users**.
+2. for **Storage location**, select bucket **aws-cloud-trail-logs-workshop** which we are using to store logs then select **Create table**.
 
-![FWD](/images/5.fwd/001-fwd.png)
+![S3](/images/5.athena/52.png)
 
-2. At the **Add user** page.
-   + In the **User name** field, enter **Portfwd**.
-   + Click on **Access key - Programmatic access**.
-   + Click **Next: Permissions**.
-  
-![FWD](/images/5.fwd/002-fwd.png)
+3. Confirm Athena table **cloudtrail_logs_aws_cloudtrail_logs_workshop** created.
 
-3. Click **Attach existing policies directly**.
-   + In the search box, enter **ssm**.
-   + Click on **AmazonSSMFullAccess**.
-   + Click **Next: Tags**, click **Next: Reviews**.
-   + Click **Create user**.
+![S3](/images/5.athena/53.png)
 
-4. Save **Access key ID** and **Secret access key** information to perform AWS CLI configuration.
+4. Find select service **Athena**, then select **Launch query editor**.
 
-#### Install and Configure AWS CLI and Session Manager Plugin
-  
-To perform this hands-on, make sure your workstation has [AWS CLI]() and [Session Manager Plugin](https://docs.aws.amazon.com/systems-manager/latest/userguide/session) installed -manager-working-with-install-plugin.html)
+![S3](/images/5.athena/53-1.png)
+![S3](/images/5.athena/53-2.png)
 
-More hands-on tutorials on installing and configuring the AWS CLI can be found [here](https://000011.awsstudygroup.com/).
+5. If this is the first time you use Athena, select **Edit settings**, if not, skip to step 10.
 
-{{%notice tip%}}
-With Windows, when extracting the **Session Manager Plugin** installation folder, run the **install.bat** file with Administrator permission to perform the installation.
-{{%/notice%}}
+![S3](/images/5.athena/54.png)
 
-#### Implement Portforwarding
+6. Click **Browse S3**.
 
-1. Run the command below in **Command Prompt** on your machine to configure **Port Forwarding**.
+![S3](/images/5.athena/55.png)
 
-```
-   aws ssm start-session --target (your ID windows instance) --document-name AWS-StartPortForwardingSession --parameters portNumber="3389",localPortNumber="9999" --region (your region)
-```
-{{%notice tip%}}
+7. Select 1 bucket to store query's result, here we choose bucket **logging-workshop-destination**.
 
-**Windows Private Instance** **Instance ID** information can be found when you view the EC2 Windows Private Instance server details.
+![S3](/images/5.athena/56.png)
 
-{{%/notice%}}
+8. Check and click **Save**.
 
-   + Example command:
+![S3](/images/5.athena/57.png)
 
-```
-C:\Windows\system32>aws ssm start-session --target i-06343d7377486760c --document-name AWS-StartPortForwardingSession --parameters portNumber="3389",localPortNumber="9999" --region ap-southeast-1
+9. Check and click **Editor** to return.
+
+![S3](/images/5.athena/58.png)
+
+10. Copy the query into the editor, make sure you are using the right table.This query will filter operation **GetObject** whihc have eventsource is **s3.amazonaws.com**. select **Run**.
+
+```sql
+SELECT *
+FROM cloudtrail_logs_aws_cloudtrail_logs_workshop
+WHERE
+    eventsource = 's3.amazonaws.com' AND
+    eventname in ('GetObject')
 ```
 
-{{%notice warning%}}
+![S3](/images/5.athena/59.png)
 
-If your command gives an error like below: \
-SessionManagerPlugin is not found. Please refer to SessionManager Documentation here: http://docs.aws.amazon.com/console/systems-manager/session-manager-plugin-not-found\
-Prove that you have not successfully installed the Session Manager Plugin. You may need to relaunch **Command Prompt** after installing **Session Manager Plugin**.
+11. Check the result below.
 
-{{%/notice%}}
+![S3](/images/5.athena/60.png)
 
-2. Connect to the **Private Windows Instance** you created using the **Remote Desktop** tool on your workstation.
-   + In the Computer section: enter **localhost:9999**.
+12. Finally, run this query to drop the table.
 
+```sql
+DROP TABLE `cloudtrail_logs_aws_cloudtrail_logs_workshop`
 
-![FWD](/images/5.fwd/003-fwd.png)
+```
 
-
-3. Return to the administration interface of the System Manager - Session Manager service.
-   + Click tab **Session history**.
-   + We will see session logs with Document name **AWS-StartPortForwardingSession**.
-
-
-![FWD](/images/5.fwd/004-fwd.png)
-
-
-Congratulations on completing the lab on how to use Session Manager to connect and store session logs in S3 bucket. Remember to perform resource cleanup to avoid unintended costs.
+![S3](/images/6.clean/61.png)

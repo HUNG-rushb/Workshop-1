@@ -28,16 +28,16 @@ Logging Amazon S3 actions with AWS CloudTrail helps keep your account secure by 
 
 | Log properties                                                                                       | AWS CloudTrail | Amazon S3 server logs |
 | ---------------------------------------------------------------------------------------------------- | :------------: | :-------------------: |
-| Can be forwarded to other systems (Amazon CloudWatch Logs, Amazon CloudWatch Events)                 |      Yes       |          No           |
-| Deliver logs to more than one destination (for example, send the same logs to two different buckets) |      Yes       |          No           |
-| Turn on logs for a subset of objects (prefix)                                                        |      Yes       |          No           |
-| Cross-account log delivery (target and source bucket owned by different accounts)                    |      Yes       |          No           |
-| Integrity validation of log file by using digital signature or hashing                               |      Yes       |          No           |
-| Default or choice of encryption for log files                                                        |      Yes       |          No           |
-| Object operations (by using Amazon S3 APIs)                                                          |      Yes       |          Yes          |
-| Bucket operations (by using Amazon S3 APIs)                                                          |      Yes       |          Yes          |
-| Searchable UI for logs                                                                               |      Yes       |          No           |
-| Fields for Object Lock parameters, Amazon S3 Select properties for log records                       |      Yes       |          No           |
+| Can be forwarded to other systems (Amazon CloudWatch Logs, Amazon CloudWatch Events)                 |    **Yes**     |          No           |
+| Deliver logs to more than one destination (for example, send the same logs to two different buckets) |    **Yes**     |          No           |
+| Turn on logs for a subset of objects (prefix)                                                        |    **Yes**     |          No           |
+| Cross-account log delivery (target and source bucket owned by different accounts)                    |    **Yes**     |          No           |
+| Integrity validation of log file by using digital signature or hashing                               |    **Yes**     |          No           |
+| Default or choice of encryption for log files                                                        |    **Yes**     |          No           |
+| Object operations (by using Amazon S3 APIs)                                                          |    **Yes**     |        **Yes**        |
+| Bucket operations (by using Amazon S3 APIs)                                                          |    **Yes**     |        **Yes**        |
+| Searchable UI for logs                                                                               |    **Yes**     |          No           |
+| Fields for Object Lock parameters, Amazon S3 Select properties for log records                       |    **Yes**     |          No           |
 
 Amazon Athena is an interactive query service that makes it easy for you to analyze data in Amazon S3 using standard SQL. You do not need to manage any infrastructure with Athena, and you pay only for the queries that you run.
 

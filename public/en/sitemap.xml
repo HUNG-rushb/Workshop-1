@@ -2,114 +2,196 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/</loc>
-    <lastmod>1970-01-01T07:33:42+07:00</lastmod>
+    <loc>//localhost:1313/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/"
+                href="//localhost:1313/vi/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/"
+                href="//localhost:1313/"
                 />
   </url><url>
-    <loc>/1-introduce/</loc>
+    <loc>//localhost:1313/1-introduce/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/1-introduce/"
+                href="//localhost:1313/vi/1-introduce/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/1-introduce/"
+                href="//localhost:1313/1-introduce/"
                 />
   </url><url>
-    <loc>/2-prerequiste/</loc>
+    <loc>//localhost:1313/2-prerequiste/2.5-file/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/2-prerequiste/"
+                href="//localhost:1313/vi/2-prerequiste/2.5-file/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/2-prerequiste/"
+                href="//localhost:1313/2-prerequiste/2.5-file/"
                 />
   </url><url>
-    <loc>/3-s3sal/</loc>
+    <loc>//localhost:1313/2-prerequiste/2.1-2buckets/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/3-s3sal/"
+                href="//localhost:1313/vi/2-prerequiste/2.1-2buckets/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/3-s3sal/"
+                href="//localhost:1313/2-prerequiste/2.1-2buckets/"
                 />
   </url><url>
-    <loc>/4-s3cloudtrail/</loc>
+    <loc>//localhost:1313/2-prerequiste/2.4-policy/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/4-s3cloudtrail/"
+                href="//localhost:1313/vi/2-prerequiste/2.4-policy/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/4-s3cloudtrail/"
+                href="//localhost:1313/2-prerequiste/2.4-policy/"
                 />
   </url><url>
-    <loc>/5-s3athena/</loc>
+    <loc>//localhost:1313/2-prerequiste/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/5-s3athena/"
+                href="//localhost:1313/vi/2-prerequiste/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/5-s3athena/"
+                href="//localhost:1313/2-prerequiste/"
                 />
   </url><url>
-    <loc>/6-cleanup/</loc>
-    <lastmod>1970-01-01T07:33:42+07:00</lastmod>
+    <loc>//localhost:1313/2-prerequiste/2.2-permission/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/6-cleanup/"
+                href="//localhost:1313/vi/2-prerequiste/2.2-permission/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/6-cleanup/"
+                href="//localhost:1313/2-prerequiste/2.2-permission/"
                 />
   </url><url>
-    <loc>/categories/</loc>
+    <loc>//localhost:1313/2-prerequiste/2.3-upload/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/categories/"
+                href="//localhost:1313/vi/2-prerequiste/2.3-upload/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/categories/"
+                href="//localhost:1313/2-prerequiste/2.3-upload/"
                 />
   </url><url>
-    <loc>/tags/</loc>
+    <loc>//localhost:1313/3-s3sal/3.2-log/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/tags/"
+                href="//localhost:1313/vi/3-s3sal/3.2-log/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/tags/"
+                href="//localhost:1313/3-s3sal/3.2-log/"
+                />
+  </url><url>
+    <loc>//localhost:1313/3-s3sal/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="//localhost:1313/vi/3-s3sal/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="//localhost:1313/3-s3sal/"
+                />
+  </url><url>
+    <loc>//localhost:1313/3-s3sal/3.1-sal/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="//localhost:1313/vi/3-s3sal/3.1-sal/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="//localhost:1313/3-s3sal/3.1-sal/"
+                />
+  </url><url>
+    <loc>//localhost:1313/4-s3cloudtrail/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="//localhost:1313/vi/4-s3cloudtrail/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="//localhost:1313/4-s3cloudtrail/"
+                />
+  </url><url>
+    <loc>//localhost:1313/5-s3athena/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="//localhost:1313/vi/5-s3athena/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="//localhost:1313/5-s3athena/"
+                />
+  </url><url>
+    <loc>//localhost:1313/6-cleanup/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="//localhost:1313/vi/6-cleanup/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="//localhost:1313/6-cleanup/"
+                />
+  </url><url>
+    <loc>//localhost:1313/categories/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="//localhost:1313/vi/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="//localhost:1313/categories/"
+                />
+  </url><url>
+    <loc>//localhost:1313/tags/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="//localhost:1313/vi/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="//localhost:1313/tags/"
                 />
   </url>
 </urlset>
