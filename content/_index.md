@@ -11,8 +11,6 @@ chapter: false
 
 In this workshop, we will use **AWS S3 server access logging** and **AWS CloudTrail** to logging when thereis operation on our S3 objects. Then we will use **AWS Athena** to query log.
 
-![ConnectPrivate](/images/arc-log.png)
-
 ### Content
 
 1.  [Introduction](1-Introduce/)
