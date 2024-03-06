@@ -1,5 +1,5 @@
 ---
-title: "Connect to EC2 servers"
+title: "S3 Server Access Logging"
 date: "`r Sys.Date()`"
 weight: 3
 chapter: false
