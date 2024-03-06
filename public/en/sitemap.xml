@@ -2,196 +2,196 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>//localhost:1313/</loc>
+    <loc>/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="//localhost:1313/vi/"
+                href="/vi/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="//localhost:1313/"
+                href="/"
                 />
   </url><url>
-    <loc>//localhost:1313/2-prerequiste/2.1-2buckets/</loc>
+    <loc>/2-prerequiste/2.1-2buckets/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="//localhost:1313/vi/2-prerequiste/2.1-2buckets/"
+                href="/vi/2-prerequiste/2.1-2buckets/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="//localhost:1313/2-prerequiste/2.1-2buckets/"
+                href="/2-prerequiste/2.1-2buckets/"
                 />
   </url><url>
-    <loc>//localhost:1313/3-s3sal/3.1-sal/</loc>
+    <loc>/3-s3sal/3.1-sal/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="//localhost:1313/vi/3-s3sal/3.1-sal/"
+                href="/vi/3-s3sal/3.1-sal/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="//localhost:1313/3-s3sal/3.1-sal/"
+                href="/3-s3sal/3.1-sal/"
                 />
   </url><url>
-    <loc>//localhost:1313/1-introduce/</loc>
+    <loc>/1-introduce/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="//localhost:1313/vi/1-introduce/"
+                href="/vi/1-introduce/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="//localhost:1313/1-introduce/"
+                href="/1-introduce/"
                 />
   </url><url>
-    <loc>//localhost:1313/3-s3sal/3.2-log/</loc>
+    <loc>/3-s3sal/3.2-log/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="//localhost:1313/vi/3-s3sal/3.2-log/"
+                href="/vi/3-s3sal/3.2-log/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="//localhost:1313/3-s3sal/3.2-log/"
+                href="/3-s3sal/3.2-log/"
                 />
   </url><url>
-    <loc>//localhost:1313/2-prerequiste/</loc>
+    <loc>/2-prerequiste/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="//localhost:1313/vi/2-prerequiste/"
+                href="/vi/2-prerequiste/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="//localhost:1313/2-prerequiste/"
+                href="/2-prerequiste/"
                 />
   </url><url>
-    <loc>//localhost:1313/2-prerequiste/2.2-permission/</loc>
+    <loc>/2-prerequiste/2.2-permission/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="//localhost:1313/vi/2-prerequiste/2.2-permission/"
+                href="/vi/2-prerequiste/2.2-permission/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="//localhost:1313/2-prerequiste/2.2-permission/"
+                href="/2-prerequiste/2.2-permission/"
                 />
   </url><url>
-    <loc>//localhost:1313/3-s3sal/</loc>
+    <loc>/3-s3sal/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="//localhost:1313/vi/3-s3sal/"
+                href="/vi/3-s3sal/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="//localhost:1313/3-s3sal/"
+                href="/3-s3sal/"
                 />
   </url><url>
-    <loc>//localhost:1313/2-prerequiste/2.3-upload/</loc>
+    <loc>/2-prerequiste/2.3-upload/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="//localhost:1313/vi/2-prerequiste/2.3-upload/"
+                href="/vi/2-prerequiste/2.3-upload/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="//localhost:1313/2-prerequiste/2.3-upload/"
+                href="/2-prerequiste/2.3-upload/"
                 />
   </url><url>
-    <loc>//localhost:1313/2-prerequiste/2.4-policy/</loc>
+    <loc>/2-prerequiste/2.4-policy/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="//localhost:1313/vi/2-prerequiste/2.4-policy/"
+                href="/vi/2-prerequiste/2.4-policy/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="//localhost:1313/2-prerequiste/2.4-policy/"
+                href="/2-prerequiste/2.4-policy/"
                 />
   </url><url>
-    <loc>//localhost:1313/4-s3cloudtrail/</loc>
+    <loc>/4-s3cloudtrail/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="//localhost:1313/vi/4-s3cloudtrail/"
+                href="/vi/4-s3cloudtrail/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="//localhost:1313/4-s3cloudtrail/"
+                href="/4-s3cloudtrail/"
                 />
   </url><url>
-    <loc>//localhost:1313/2-prerequiste/2.5-file/</loc>
+    <loc>/2-prerequiste/2.5-file/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="//localhost:1313/vi/2-prerequiste/2.5-file/"
+                href="/vi/2-prerequiste/2.5-file/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="//localhost:1313/2-prerequiste/2.5-file/"
+                href="/2-prerequiste/2.5-file/"
                 />
   </url><url>
-    <loc>//localhost:1313/5-s3athena/</loc>
+    <loc>/5-s3athena/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="//localhost:1313/vi/5-s3athena/"
+                href="/vi/5-s3athena/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="//localhost:1313/5-s3athena/"
+                href="/5-s3athena/"
                 />
   </url><url>
-    <loc>//localhost:1313/6-cleanup/</loc>
+    <loc>/6-cleanup/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="//localhost:1313/vi/6-cleanup/"
+                href="/vi/6-cleanup/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="//localhost:1313/6-cleanup/"
+                href="/6-cleanup/"
                 />
   </url><url>
-    <loc>//localhost:1313/categories/</loc>
+    <loc>/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="//localhost:1313/vi/categories/"
+                href="/vi/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="//localhost:1313/categories/"
+                href="/categories/"
                 />
   </url><url>
-    <loc>//localhost:1313/tags/</loc>
+    <loc>/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="//localhost:1313/vi/tags/"
+                href="/vi/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="//localhost:1313/tags/"
+                href="/tags/"
                 />
   </url>
 </urlset>
